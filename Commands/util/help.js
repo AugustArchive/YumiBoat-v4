@@ -9,7 +9,7 @@ const info = {
 /**
   * Help command class.
   * @extends Command
-/**
+**/
 
 class HelpCommand extends Command {
   constructor(client, group, info) {
