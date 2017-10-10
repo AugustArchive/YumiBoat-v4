@@ -1,0 +1,17 @@
+{
+   "prefix": "y/",
+   "api_keys": {
+     "discord": {
+       "login": "-- discordapp.com token --"
+     },
+     "discordbots": {
+       "oliyBots": "-- discordbots.org token --",
+       "discordBoats": "-- bots.discord.pw token --",
+       "crystalBoats": "-- discord.services token --",
+       "derplistBoats": "-- bots.iderp.space token --"
+     },
+     "cleverbot": "-- cleverbot.io token --"
+   },
+   "invite": "-- discord.gg invite --",
+   "devs": [ "-- id1 --", "-- id2 --" ]
+}
