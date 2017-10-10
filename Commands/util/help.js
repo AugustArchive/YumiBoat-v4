@@ -24,7 +24,7 @@ class HelpCommand extends Command {
     const long = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
     try {
       msg.channel.send(`[__**\`Help\`**__] Check your DM's!`);
-      msg.author.send(`__**YumiBoat v4 Commands**__\n\nYou can use \`${prefix}help [command]\` to get help with a command or you can mention me (<@${this.client.user.id}> help [command])\n\n${this.client.commands.map(command => \`${command.name}${' '.repeat(longest - command.name.length)}`).join('\n');
+      msg.author.send(`__**YumiBoat v4 Commands**__\n\nYou can use \`${prefix}help [command]\` to get help with a command or you can mention me (<@${this.client.user.id}> help [command])\n\n${this.client.commands.map(command => \`${command.name}${' '.repeat(longest - command.name.length)}\``).join('\n');
     } catch(err) {
       msg.channel.send('[__**`Help`**__] You might have DM\'s disabled, too bad you can\'t see them!');
     } else {
