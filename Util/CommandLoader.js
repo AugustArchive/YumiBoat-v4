@@ -8,7 +8,7 @@ class CommandFilePath {
     this.client = client;
   }
   
-  File.walk(this.path, (err, dirP, dir) => {
+  File.walk('../Commands', (err, dirP, dir) => {
      if (err) {
        this.log.error(`[Command Path] Error while processing with this:\n\nError Message: ${err.message}\nError Stack: ${err.stack}`);
      } else {
