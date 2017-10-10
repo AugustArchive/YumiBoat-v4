@@ -15,7 +15,7 @@ class UrbanCommand extends Command {
    
    async run(msg, args) {
      if (args.length < 1) {
-        return msg.reply(`[__**`Urban`**__] You must provide a search function\nUse \`y/help urban\ to see what the examples are!`);
+        return msg.reply(`[__**\`Urban\`**__] You must provide a search function\nUse \`y/help urban\ to see what the examples are!`);
      } else {
        try {
           let result = await urban.random(args.join(" "));
@@ -32,7 +32,7 @@ class UrbanCommand extends Command {
           disableEveryone: true
           });
        } catch(err) {
-         msg.channel.send(`[__**`Urban`**__] I guess there wasn't anything in the Urban Dictionary...`);
+         msg.channel.send(`[__**\`Urban\`**__] I guess there wasn't anything in the Urban Dictionary...`);
        }
      }
    }
