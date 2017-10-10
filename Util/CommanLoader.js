@@ -17,6 +17,7 @@ class CommandFilePath {
             if (error) {
               throw new Error(error);
             } else {
+              let folder = dir.slice(9);
               files.forEach(filez => {
                 let Command = require(`../Commands/${folder}/$[filez}`);
                 let Module = new Command(this.client, folder);
