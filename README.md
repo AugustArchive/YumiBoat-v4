@@ -49,6 +49,15 @@ and boom! Now run the `run.sh` file and it should install `pm2` and run it with 
 
 A lot, am I right?
 
+## Commands
+|Commands|Arguments|Permission|Category|Aliases|
+|--------|---------|----------|--------|-------|
+|`y/anime`| search | User | Fun | None |
+|`y/urban` | search | User | Fun | `ud` `dictionary`|
+|`y/help` | command | User | Util | `halp` `h` |
+
+**That's all for v4, More commands soon! :)**
+
 ## Credits
 I'm giving *most* of the credit to [Yukine](https://github.com/Dev-Yukine) for giving me the idea to use "classes" in commands
 also giving credit to [stupid cat](https://blargbot.xyz) for the [web server](https://github.com/YumiBoat/yumibot.party)!
