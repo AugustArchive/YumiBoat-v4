@@ -1,0 +1,39 @@
+{
+  "name": "yumiboat",
+  "description": "A general multipurpose discord bot.",
+  "version": "4.0.0",
+  "keywords": [],
+  "maintainers": [
+    "Chris <ohlookitsAugust@gmail.com>",
+    "Derpy <no_email>",
+    "Hansen <no_email>"
+  ],
+  "dependencies": {
+    "discord.js", "^11.2.1",
+    "humanize-duration": "^3.10.1",
+    "snekfetch": "^3.5.1",
+    "kitsu.js": "^2.0.0",
+    "sj.reggol": "^0.0.1",
+    "figlet": "^1.2.0",
+    "cleverbot-node": "^0.3.10",
+    "deezer-node-api": "^0.2.2",
+    "jimp": "^0.2.28",
+    "ytdl-core": "^0.18.0",
+    "simple-youtube-api": "^4.0.0",
+    "rls-api": "^1.0.2",
+    "relevant-urban": "^2.0.0"
+  },
+  "homepage": "https://yumibot.party/",
+  "devDependencies": {},
+  "scripts": {
+    "build": "npm install pm2 -g && pm2 start",
+    "start": "pm2 start Shard.js --name YumiBoat-v4",
+    "test": "echo \"Remove Shard.js file"\ && node YumiBoat.js"
+  },
+  "author": "August (Chris)",
+  "lisence": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YumiBoat/YumiBoat"
+  }
+}
