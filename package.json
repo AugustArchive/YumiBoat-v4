@@ -9,7 +9,7 @@
     "Hansen <no_email>"
   ],
   "dependencies": {
-    "discord.js", "^11.2.1",
+    "discord.js": "^11.2.1",
     "humanize-duration": "^3.10.1",
     "snekfetch": "^3.5.1",
     "kitsu.js": "^2.0.0",
@@ -28,7 +28,7 @@
   "scripts": {
     "build": "npm install pm2 -g && pm2 start",
     "start": "pm2 start Shard.js --name YumiBoat-v4",
-    "test": "echo \"Remove Shard.js file"\ && node YumiBoat.js"
+    "test": "echo \"Remove Shard.js file\" && node YumiBoat.js"
   },
   "author": "August (Chris)",
   "lisence": "Apache-2.0",
