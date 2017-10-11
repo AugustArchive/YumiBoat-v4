@@ -3,7 +3,7 @@ const info = {
   name: 'inviteme',
   description: "Some links (Invite, Server, Github, etc.)",
   aliases: ['invite'],
-  examples: ["y/invite', 'y/inviteme']
+  examples: ['y/invite', 'y/inviteme']
 }
 const { RichEmbed } = require('discord.js');
 
