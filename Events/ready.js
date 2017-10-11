@@ -1,4 +1,5 @@
 const Event = require('../Structures/Event');
+const updatebots = require('../Functions/update-bots');
 
 class ReadyEvent extends Event {
   constructor(client) {
@@ -24,6 +25,7 @@ class ReadyEvent extends Event {
           type: 0
         }
      });
+    this.client.setInterval(updatebots(), 5000);
   }
 }
 
