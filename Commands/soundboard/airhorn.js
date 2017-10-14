@@ -11,19 +11,19 @@ class AirhornCommand extends Command {
   constructor(client, info, group) {
     super(client, info, group);
   }
-  
+
   run(msg) {
     const voiceChan = msg.member.voiceChannel;
-    
+
     if (!voiceChan) return msg.channel.send(`[__**\`Soundboard\`**__]: You must be in a voice channel!`);
-    
+    const streamOptions = { seek: 0, volume: 1,passes:2 };
     voiceChan.join()
     .then(connection => {
        let stream = ytdl("url", { filter: 'audioonly' });
-       let dispatcher = connection.playStream(stream);
-       
+       let dispatcher = connection.playStream(stream, streamOptions);
+
        msg.channel.send("[__**`Soundboard`**__]: Now playing soundboard 'Airhorn'!");
-       
+
        dispatcher.on('end', function() {
          msg.channel.send("[__**`Soundboard`**__]: Airhorn ended; Now leaving.");
          voiceChan.leave();
