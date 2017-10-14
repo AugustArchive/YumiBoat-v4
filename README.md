@@ -10,14 +10,9 @@ This is from the [BuildScript repo](https://github.com/YumiBoat/Yumi-BuildScript
 ```sh
 $ git clone https://github.com/YumiBoat/YumiBoat
 $ git clone https://github.com/YumiBoat/Yumi-BuildScript
-$ cd YumiBoat
-$ npm install
+$ cd Yumi-BuildScript
 ```
-Just 4 commands! :)
-
-Now we need to run the build script.
-Go to the /Yumi-BuildScript folder and go to the src folder, There is a linux & windows bat/sh files,
-I made it for all os', Now go to your operation system (Windows or Linux).
+Were in the "BuildScript" repository! :D
 
 #### Installation [Windows]
 Run the `build.bat` file and it will build the thing. It will detect if you have Node.js
@@ -31,6 +26,32 @@ There is mutiple folders, right? Now follow these steps.
 Go to the folder that says `ubuntu-debian` and run the `build.sh` file, it will install Node.js if it isn't installed
 and it will build Yumi's needs (`discord.js` `snekfetch` `humanize-duration` etc etc)
 and boom! Now run the `run.sh` file and it should install `pm2` and run it with pm2!
+
+### Installation (Advanced)
+Were gonna pull from the [YumiBoat/YumiBoat (Here)](https://github.com/YumiBoat/YumiBoat) repository!
+
+```sh
+$ git clone https://github.com/YumiBoat/YumiBoat
+$ cd YumiBoat
+$ npm install
+```
+
+It installs everything.
+
+#### Starting the bot
+You can use `pm2` if wanted.
+
+```
+node Shard.js
+```
+This will run the "Shard" file, which is required if 100+ servers (I say 100 for the future (smirk_face)) or `2500` servers ;P
+
+**Using pm2!**
+```
+$ npm install pm2 -g
+$ cd YumiBoat - If not in Directory
+$ pm2 start Shard.js --name=YumiBoat-v4
+```
 
 ## Libraries
 * [discord.js](https://discord.js.org)
@@ -50,13 +71,14 @@ and boom! Now run the `run.sh` file and it should install `pm2` and run it with 
 A lot, am I right?
 
 ## Commands
-|Commands|Arguments|Permission|Category|Aliases|
-|--------|---------|----------|--------|-------|
-|`y/anime`| search | User | Fun | None |
-|`y/urban` | search | User | Fun | `ud` `dictionary`|
-|`y/help` | command | User | Util | `halp` `h` |
-
-**That's all for v4, More commands soon! :)**
+Its split into "groups" or categories :P
+* [Utility](https://github.com/YumiBoat/YumiBoat/wiki)
+* [Search](https://github.com/YumiBoat/YumiBoat/wiki)
+* [Soundboard](https://github.com/YumiBoat/YumiBoat/wiki)
+* [Locale](https://github.com/YumiBoat/YumiBoat/wiki)
+* [General](https://github.com/YumiBoat/YumiBoat/wiki)
+* [Developer](https://github.com/YumiBoat/YumiBoat/wiki)
+* [Fun](https://github.com/YumiBoat/YumiBoat/wiki)
 
 ## Credits
 I'm giving *most* of the credit to [Yukine](https://github.com/Dev-Yukine) for giving me the idea to use "classes" in commands
