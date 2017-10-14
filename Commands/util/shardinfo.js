@@ -22,7 +22,7 @@ class ShardsCommand extends Command {
      Promise.all(request).then(shards => {
        this.client.shard.broadcastEval('[this.client.shard.id, this.client.guilds.size, this.client.users.size, this.client.channels.size, (process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)]').then(results => {
           msg.channel.send(`[__**\`Shards\`**__]: In the next message; You can view my shard statistics..`);
-          msg.channel.send(`Shard ${this.client.shard.id}:\nGuilds: ${this.client.guilds.size} | Users: ${this.client.users.size} | Channels: ${this.client.channels.size} | Mem Usage: ${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)MB, { code: 'prolog' });
+          msg.channel.send(`Shard ${this.client.shard.id}:\nGuilds: ${this.client.guilds.size} | Users: ${this.client.users.size} | Channels: ${this.client.channels.size} | Mem Usage: ${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)MB`, { code: 'prolog' });
        });
      });
    }
