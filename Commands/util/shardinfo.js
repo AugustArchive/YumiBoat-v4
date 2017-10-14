@@ -1,7 +1,7 @@
 const Command = require('../../Structures/Command');
 const info = {
   name: 'shardinfo',
-  description: 'Shows some shard info about SHARDS :O",
+  description: 'Shows some shard info about SHARDS :O',
   aliases: ['shards'],
   examples: ['y/shards', 'y/shardinfo']
 }
