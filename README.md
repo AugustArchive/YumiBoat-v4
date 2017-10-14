@@ -60,7 +60,7 @@ $ pm2 start Shard.js --name=YumiBoat-v4
 * [kitsu.js](https://github.com/iCrawl/kitsu.js)
 * [sj.reggol](https://github.com/ohlookitsAugust/sj.reggol) // :O Its me :D
 * [figlet](https://github.com/patorjk/figlet.js)
-* [cleverbot-node](https://github.com/fojas/cleverbot-node)
+* [cleverbot-node](https://github.com/fojas/cleverbot-node) // A key is required to use this.
 * [deezer-node-api](https://github.com/acostes/deezer-node-api)
 * [Jimp](https://github.com/oliver-moran/jimp)
 * [ytdl-core](https://github.com/fent/node-ytdl-core)
