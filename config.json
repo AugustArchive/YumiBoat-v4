@@ -13,5 +13,9 @@
      "cleverbot": "-- cleverbot.io token --"
    },
    "invite": "-- discord.gg invite --",
-   "devs": [ "-- id1 --", "-- id2 --" ]
+   "devs": [ "-- id1 --", "-- id2 --" ],
+   "embed": {
+      "footer": "YumiBoat v4: Made by August"
+   },
+   "color": ""
 }
