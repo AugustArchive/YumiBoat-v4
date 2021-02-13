@@ -1,3 +1,6 @@
+## WARNING
+This is old code, I DO NOT RECOMMEND RUNNING IT!
+
 # YumiBoat
 The production version of the bot.
 
